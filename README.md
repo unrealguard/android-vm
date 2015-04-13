@@ -1,12 +1,16 @@
 ## Fork of rickfarmer's android vm
 
+This is a vagrant box that preloads JDK7, Android Studio, the Android SDK/Build Tools, the Android NDK, C/C++ build tools, apt, and vim. It runs on Ubuntu 12.04 (64 bit).
+
 ###Instructions
 ==============
 
 ####Install Components
 For your VM environment, you will need:   
 [Vagrant](https://www.vagrantup.com/downloads.html)   
-[Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)   
+[Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+Make sure you update your path variable.
 
 
 ####Clone the repository
