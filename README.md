@@ -33,7 +33,7 @@ Username: vagrant Password: vagrant
 ####Further configuration   
 If the VM is running, enter `vagrant halt`    
 Open up VirtualBox and select your machine. Click settings.   
-I reccommend setting the video ram to max, cpu to max, and systam ram to 1/4 of your total ram.
+I reccommend setting the video ram to max, cpu to max, and system ram to 1/4 of your total ram.
 
 ####Where are my tools?
 Android development tools were installed to `/usr/local/android`
