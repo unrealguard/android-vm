@@ -1,6 +1,6 @@
 ## Fork of rickfarmer's android vm
 
-This is a vagrant box that preloads JDK7, Android Studio, the Android SDK/Build Tools, the Android NDK, C/C++ build tools, apt, and vim. It runs on Ubuntu 12.04 (64 bit).
+This is a vagrant box that preloads JDK7, Android Studio, the Android SDK/Build Tools, the Android NDK, GNU C/C++  tool-chain, apt, and vim. It runs on Ubuntu 12.04 (64 bit).
 
 ###Instructions
 ==============
