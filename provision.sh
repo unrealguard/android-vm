@@ -18,6 +18,10 @@ echo "***** Installing Vbox guest utils (for high res support) *****"
 echo " "
 sudo apt-get -y --force-yes install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
+echo " "
+echo "***** Installing git... *****"
+sudo apt-get -y --force-yes install git
+
 # Install a desktop for the Android graphical tooling, e.g. Eclipse
 
 #echo "What is your preferred Ubuntu desktop?"
@@ -59,10 +63,13 @@ sudo aptitude install -y --without-recommends ubuntu-desktop >/dev/null 2>&1
 echo " "
 echo "***** Installing Android Studio *****"
 echo " "
+
+sudo mkdir /usr/local/android
+sudo mkdir /usr/local/android/android_studio
 cd /tmp
 sudo curl -O https://dl.google.com/dl/android/studio/ide-zips/1.1.0/android-studio-ide-135.1740770-linux.zip
 sudo unzip /tmp/android-studio-ide-135.1740770-linux.zip >/dev/null 2>&1
-sudo mv /tmp/android-studio /usr/local/android/
+sudo mv /tmp/android-studio /usr/local/android/android_studio/
 sudo rm -rf /tmp/android-studio-ide-135.1740770-linux.zip
 
 echo " "
@@ -71,7 +78,7 @@ echo " "
 sudo curl -O http://dl.google.com/android/android-sdk_r24.1.2-linux.tgz
 sudo tar zxvf android-sdk_r24.1.2-linux.tgz
 cd /tmp/android-sdk-linux/tools
-echo "y" | sudo ./android update sdk --no-ui --filter 1,2,3,4,24,35,36,41,42,43
+echo "y" | sudo ./android update sdk --no-ui --filter 1,2,3,4,24,35,36,41,42,43,21,tool,platform-tool,doc
 cd /tmp/
 sudo mv /tmp/android-sdk-linux /usr/local/android/sdk/
 sudo rm -rf /tmp/android-sdk_r24.1.2-linux.tgz
