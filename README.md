@@ -11,7 +11,7 @@ For your VM environment, you will need:
 [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Make sure you update your path variable.
-
+Refernces on how to do that: [OSX](http://architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/#.VS3lEfnF_wB), [Windows](http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx), [Linux](https://help.ubuntu.com/community/EnvironmentVariables)
 
 ####Clone the repository
 
@@ -40,7 +40,6 @@ Android development tools were installed to `/usr/local/android`
 
 
 ####Issues
-Git installation is missing (Can still be installed from inside VM). Fix coming.   
 Missing Android API 21 tools/images (API 22 is installed though). Fix coming.
 
 
