@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 VAGRANTFILE_API_VERSION = "2"
-BOX_NAME = "anroid-dev"
+BOX_NAME = "android-dev"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
