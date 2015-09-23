@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 VAGRANTFILE_API_VERSION = "2"
-BOX_NAME = "beartooth-dev"
+BOX_NAME = "anroid-dev"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
@@ -39,9 +39,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "vim"
-
-
-
   end
 
   config.vm.provision "shell", inline: "echo Installing Android ADT bundle and NDK..."
